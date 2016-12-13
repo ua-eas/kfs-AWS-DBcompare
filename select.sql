@@ -5,4 +5,4 @@
 -- ====================================================================================================================
 
 -- Basic query
-select DOC_TYP_ID from KREW_DOC_TYP_T;
+select DOC_TYP_ID from KREW_DOC_TYP_T where DOC_TYP_ID=3000;
