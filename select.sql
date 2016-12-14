@@ -1,8 +1,7 @@
+-- Returns the number of records in DBA
+select count(*) from dba_tables;
 
--- ====================================================================================================================
--- 0)Pre-requisites  Clean all 
+-- Return list of all tables
+select table_name from dba_tables order by table_name;
 
--- ====================================================================================================================
-
--- Basic query
-select DOC_TYP_ID from KREW_DOC_TYP_T order by DOC_TYP_ID ; 
+-- select DOC_TYP_ID from KREW_DOC_TYP_T order by DOC_TYP_ID ; 
