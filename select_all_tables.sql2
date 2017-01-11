@@ -3,4 +3,4 @@
 
 -- Return list of all tables
 
-select table_name from all_tables where table_name not like '%$%';
+select table_name from all_tables where table_name not like '%$%' order by table_name;
