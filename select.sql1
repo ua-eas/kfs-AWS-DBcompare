@@ -1,7 +1,7 @@
 -- Returns the number of records in DBA
 select count(*) from dba_tables;
-select count(*) from all_tables;
+-- select count(*) from all_tables;
 
 -- Return list of all tables
-select table_name from dba_tables order by table_name;
-select table_name from all_tables order by table_name;
+-- select table_name from dba_tables order by table_name;
+-- select table_name from all_tables order by table_name;
