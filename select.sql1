@@ -1,5 +1,6 @@
 -- Returns the number of records in DBA
-select count(*) from dba_tables;
+SELECT CURRENT_TIMESTAMP FROM DUAL;
+-- select count(*) from dba_tables;
 -- select count(*) from all_tables;
 
 -- Return list of all tables
