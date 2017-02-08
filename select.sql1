@@ -2,7 +2,7 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool /data/kfimp_GL_ENTRY_T.xls
+spool /home/ec2-user/data/kfimp_GL_ENTRY_T.xls
 
 
 select UNIV_FISCAL_YR,
@@ -59,7 +59,7 @@ spool off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
-spool /data/kprd_GL_ENTRY_T.xls
+spool /home/ec2-user/data/kprd_GL_ENTRY_T.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
