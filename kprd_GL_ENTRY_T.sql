@@ -1,3 +1,4 @@
+
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
@@ -52,3 +53,4 @@ PROJECT_CD,
 ORG_REFERENCE_ID,
 FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD ASC;
+spool off
