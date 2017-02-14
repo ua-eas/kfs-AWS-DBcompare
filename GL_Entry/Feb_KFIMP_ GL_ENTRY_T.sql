@@ -1,8 +1,8 @@
-ELECT CURRENT_TIMESTAMP FROM DUAL;
+SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool ./data/Feb_kfimp_GL_ENTRY_T.xls
+spool ./data/feb/Feb_kfimp_GL_ENTRY_T.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
