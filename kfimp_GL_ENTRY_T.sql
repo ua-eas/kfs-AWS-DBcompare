@@ -1,4 +1,3 @@
-
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
@@ -29,7 +28,7 @@ ORG_REFERENCE_ID,
 FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD from kulowner.GL_ENTRY_T 
 WHERE TRANSACTION_DT BETWEEN TO_DATE ('2016/01/01', 'yyyy/mm/dd')
-AND TO_DATE ('2016/01/02', 'yyyy/mm/dd')
+AND TO_DATE ('2016/01/31', 'yyyy/mm/dd')
 order by UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
 FIN_BALANCE_TYP_CD,
