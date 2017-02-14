@@ -54,5 +54,5 @@ FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD ASC;
 
 
-
+spool off
 
