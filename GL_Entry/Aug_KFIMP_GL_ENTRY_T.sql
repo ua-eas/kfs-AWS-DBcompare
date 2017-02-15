@@ -28,7 +28,7 @@ FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD 
 from kulowner.GL_ENTRY_T@uazkfprd 
 WHERE TRANSACTION_DT BETWEEN TO_DATE ('2016/08/01', 'yyyy/mm/dd')
-AND TO_DATE ('2016/04/31', 'yyyy/mm/dd')
+AND TO_DATE ('2016/08/31', 'yyyy/mm/dd')
 order by UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
 FIN_BALANCE_TYP_CD,
