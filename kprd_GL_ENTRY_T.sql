@@ -2,7 +2,7 @@
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
-spool ./data/kprd_GL_ENTRY_T.xls
+-- spool ./data/kprd_GL_ENTRY_T.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
@@ -28,8 +28,8 @@ ORG_REFERENCE_ID,
 FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD 
 from kulowner.GL_ENTRY_T@uazkfprd 
-WHERE TRANSACTION_DT BETWEEN TO_DATE ('2016/01/01', 'yyyy/mm/dd')
-AND TO_DATE ('2016/01/31', 'yyyy/mm/dd')
+WHERE TRANSACTION_DT BETWEEN TO_DATE ('YEAR/01/01', 'yyyy/mm/dd')
+AND TO_DATE ('YEAR/01/31', 'yyyy/mm/dd')
 order by UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
 FIN_BALANCE_TYP_CD,
@@ -53,4 +53,4 @@ PROJECT_CD,
 ORG_REFERENCE_ID,
 FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD ASC;
-spool off
+-- spool off
