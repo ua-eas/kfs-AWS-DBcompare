@@ -1,7 +1,7 @@
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
--- set markup html on spool on 
--- spool ./data/kprd_GL_ENTRY_T.xls
+set markup html on spool on 
+spool ./data/kprd_GL_ENTRY_T.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
@@ -52,4 +52,4 @@ PROJECT_CD,
 ORG_REFERENCE_ID,
 FDOC_REF_TYP_CD,
 FS_REF_ORIGIN_CD ASC;
--- spool off
+spool off
