@@ -2,7 +2,7 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool ./data/June_kfimp_GL_ENTRY_T.xls
+spool ./data/kfimp.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,
