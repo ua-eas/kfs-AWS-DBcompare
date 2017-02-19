@@ -1,4 +1,4 @@
-;SELECT CURRENT_TIMESTAMP FROM DUAL;
+SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 spool ./data/kfprd.xls
