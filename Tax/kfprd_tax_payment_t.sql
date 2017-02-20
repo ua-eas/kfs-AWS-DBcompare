@@ -2,7 +2,7 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool ./data/kfimp.xls
+spool ./data/kfprd.xls
 
 select PAYMENT_ID,
 PAYMENT_GRP_ID,
