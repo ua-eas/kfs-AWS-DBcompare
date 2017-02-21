@@ -1,1 +1,13 @@
-FP_PRCRMNT_LVL3_ADD_T
+SELECT CURRENT_TIMESTAMP FROM DUAL;
+
+set markup html on spool on 
+
+spool ./data/kfprd.xls
+
+select * from kulowner.FP_PRCRMNT_LVL3_ADD_T
+order by FDOC_NBR, OBJ_ID asc;
+
+
+
+spool off
+
