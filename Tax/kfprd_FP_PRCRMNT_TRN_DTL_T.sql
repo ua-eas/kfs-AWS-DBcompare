@@ -7,7 +7,8 @@ spool ./data/kfprd.xls
 select * from kulowner.FP_PRCRMNT_TRN_DTL_T@uazkfprd
 WHERE TRANSACTION_DT BETWEEN TO_DATE ('YEAR/01/01', 'yyyy/mm/dd')
 AND TO_DATE ('YEAR/12/31', 'yyyy/mm/dd')
-order by FDOC_NBR,OBJ_ID,TRN_REF_NBR asc;
+order by FDOC_NBR,OBJ_ID,VER_NBR,TRN_REF_NBR,TRN_ORIG_CRNCY_AMT asc;
+
 
 
 
