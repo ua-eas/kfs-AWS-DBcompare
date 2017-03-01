@@ -2,7 +2,7 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool ./data/kfprd.xls
+spool ./data/kfprd1.xls
 
 select * from kulowner.FP_PRCRMNT_LVL3_ADD_T@uazkfprd
 WHERE ORDER_DT  BETWEEN TO_DATE ('2001/01/01', 'yyyy/mm/dd')
