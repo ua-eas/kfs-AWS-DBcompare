@@ -4,7 +4,7 @@ set markup html on spool on
 
 spool ./data/kfprd.xls
 
-select * from kulowner.AP_CRDT_MEMO_STAT_T@KFS3IMP
+select * from kulowner.AP_CRDT_MEMO_STAT_T
 order by CRDT_MEMO_STAT_CD, OBJ_ID asc;
 
 
