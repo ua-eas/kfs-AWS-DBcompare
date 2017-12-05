@@ -1,7 +1,7 @@
-fSELECT CURRENT_TIMESTAMP FROM DUAL;
+SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
-spool ./data/gl_ca.xls
+spool ./data/kfs7_gl_ca.xls
 
 select /*+ parallel(a) parallel(b) */
 a.account_nbr || a.fin_object_cd || a.fin_sub_obj_cd as SUB_OBJ_CD_NOT_IN_2016,
@@ -34,6 +34,6 @@ a.fin_object_cd,
 a.fin_sub_obj_cd,
 b.sub_fund_grp_cd,
 b.acct_closed_ind,
-a.fin_balance_typ_cd
+a.fin_balance_typ_cd;
 
 spool off
