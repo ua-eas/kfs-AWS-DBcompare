@@ -1,8 +1,8 @@
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-set markup html on spool on 
+set markup html on spool on
 
-spool ./data/tax_payment_t_gold.xls
+spool ./data/tax_payment_t_7.xls
 
 select * from kulowner.tax_payment_t
 order by PAYMENT_ID,
