@@ -5,7 +5,6 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-set markup html on spool on 
 spool ./data/tax_payee_t_7.xls
 
 select count(1) from KULOWNER.tax_payee_t;

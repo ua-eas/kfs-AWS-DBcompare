@@ -1,12 +1,15 @@
-SELECT CURRENT_TIMESTAMP FROM DUAL;
+set colsep ','     
+set pagesize 0   
+set trimspool on 
+set headsep off     
 
-set markup html on spool on 
+SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 spool ./data/fp_proc_gold.xls
 
 select * from kulowner.FP_PRCRMNT_LVL3_ADD_T
-WHERE ORDER_DT  BETWEEN TO_DATE ('2001/01/01', 'yyyy/mm/dd')
-AND TO_DATE ('2013/12/31', 'yyyy/mm/dd')
+WHERE ORDER_DT  BETWEEN TO_DATE ('2017/08/01', 'yyyy/mm/dd')
+AND TO_DATE ('2017/08/07', 'yyyy/mm/dd')
 order by FDOC_NBR, OBJ_ID,VER_NBR,DEST_POSTAL  asc;
 
 

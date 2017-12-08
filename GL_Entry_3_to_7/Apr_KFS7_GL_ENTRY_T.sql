@@ -1,6 +1,10 @@
+set colsep ','     
+set pagesize 0   
+set trimspool on 
+set headsep off     
+
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-set markup html on spool on 
 
 spool ./data/kfs7.xls
 
