@@ -5,7 +5,6 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-
 spool ./data/kfs7_ld_ldgr.xls
 
 
