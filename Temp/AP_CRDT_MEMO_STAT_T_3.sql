@@ -2,7 +2,7 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 set markup html on spool on 
 
-spool ./data/kfs3.xls
+spool ./data/AP_CRDT_MEMO_STAT_T.xls
 
 select * from kulowner.AP_CRDT_MEMO_STAT_T
 order by CRDT_MEMO_STAT_CD, OBJ_ID asc;
