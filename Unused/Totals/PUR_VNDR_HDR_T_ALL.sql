@@ -5,8 +5,9 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/kfs7dev.xls
+spool ./data/pur_vndr_7.xls
 
-select table_name, num_rows from all_tables; 
+select * from PUR_VNDR_HDR_T;
+order by VNDR_TAX_NBR, VNDR_HDR_GNRTD_ID, OBJ_ID, VER_NBR ASC;
 
 spool off

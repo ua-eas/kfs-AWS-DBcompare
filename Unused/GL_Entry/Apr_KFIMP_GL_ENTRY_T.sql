@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/kfs7.xls
+spool ./data/kfimp.xls
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,

@@ -5,8 +5,9 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/kfs7dev.xls
+spool ./data/pdp_all.xls
 
-select table_name, num_rows from all_tables; 
+select * from PDP_SHIPPING_ACCT_T
+order by SHIPPING_ACCOUNT_NBR, ACCOUNT_NBR, PRNCPL_ID asc;
 
 spool off
