@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/kfs7stg.xls
+spool ./data/kfs7_second.xls
 
 select table_name, num_rows from all_tables; 
 
