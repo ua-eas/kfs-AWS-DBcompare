@@ -38,6 +38,7 @@ a.fin_object_cd,
 a.fin_sub_obj_cd,
 b.sub_fund_grp_cd,
 b.acct_closed_ind,
-a.fin_balance_typ_cd;
+a.fin_balance_typ_cd
+order by a.account_nbr;
 
 spool off
