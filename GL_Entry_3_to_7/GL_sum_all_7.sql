@@ -2,7 +2,7 @@ set colsep ','
 set pagesize 0   
 set trimspool on 
 set headsep off
-set numformat 999999999999999999999999
+set numwidth 20
 
 spool ./data/sum_all7.xls
 
