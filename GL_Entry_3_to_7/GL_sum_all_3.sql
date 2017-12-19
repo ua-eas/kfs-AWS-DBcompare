@@ -2,6 +2,7 @@ set colsep ','
 set pagesize 0   
 set trimspool on 
 set headsep off     
+set numformat 99999999999 
 
 
 spool ./data/sum_all3.xls
