@@ -1,8 +1,8 @@
 set colsep ','     
 set pagesize 0   
 set trimspool on 
-set headsep off     
-
+set headsep off
+set numwidth 20
 
 spool ./data/sum_all3.xls
 
