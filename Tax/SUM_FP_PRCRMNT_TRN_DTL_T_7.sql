@@ -10,6 +10,3 @@ select SUM(TRN_ORIG_CRNCY_AMT), SUM(TRN_STLMNT_AMT), SUM(TRN_SALES_TAX_AMT), SUM
 
 spool off
 
-
-describe FP_PRCRMNT_TRN_DTL_T;
-
