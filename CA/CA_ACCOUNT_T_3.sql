@@ -64,5 +64,3 @@ CG_ACCT_RESP_ID
 from CA_ACCOUNT_T order by 1 ASC;
 
 spool off
-
-spool off
