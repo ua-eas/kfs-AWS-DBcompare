@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/FP_PRCRMNT_TRN_DTL_T_3.xls
+spool ./data/FP_PRCRMNT_TRN_DTL_T_3.csv
 
 select * from kulowner.FP_PRCRMNT_TRN_DTL_T
 WHERE TRANSACTION_DT BETWEEN TO_DATE ('2017/01/01', 'yyyy/mm/dd')

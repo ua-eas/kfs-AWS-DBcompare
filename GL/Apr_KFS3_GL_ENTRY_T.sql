@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/GL_ENTRY_T_3.xls
+spool ./data/GL_ENTRY_T_3.csv
 
 select UNIV_FISCAL_YR,
 TRN_LDGR_ENTR_AMT,

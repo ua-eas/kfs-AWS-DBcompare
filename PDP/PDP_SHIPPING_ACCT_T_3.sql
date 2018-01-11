@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/PDP_SHIPPING_ACCT_T_3.xls
+spool ./data/PDP_SHIPPING_ACCT_T_3.csv
 
 select * from kulowner.PDP_SHIPPING_ACCT_T
 order by SHIPPING_ACCOUNT_NBR, ACCOUNT_NBR, PRNCPL_ID asc;

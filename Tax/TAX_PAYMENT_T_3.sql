@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/TAX_PAYMENT_T_3.xls
+spool ./data/TAX_PAYMENT_T_3.csv
 
 select * from kulowner.TAX_PAYMENT_T
  WHERE DISB_DT  BETWEEN TO_DATE ('YEAR/04/01', 'yyyy/mm/dd')

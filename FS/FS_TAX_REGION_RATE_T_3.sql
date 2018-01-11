@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/FS_TAX_REGION_RATE_T_3.xls
+spool ./data/FS_TAX_REGION_RATE_T_3.csv
 
 select * from FS_TAX_REGION_RATE_T;
 

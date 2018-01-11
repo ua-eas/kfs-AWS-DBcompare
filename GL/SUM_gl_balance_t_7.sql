@@ -4,7 +4,7 @@ set trimspool on
 set headsep off     
 
 
-spool ./data/gl_balance_t_7.xls
+spool ./data/gl_balance_t_7.csv
 
 select 
 SUM(ACLN_ANNL_BAL_AMT), 

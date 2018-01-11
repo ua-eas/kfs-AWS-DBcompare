@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/FP_PRCRMNT_LVL3_ADD_T_3.xls
+spool ./data/FP_PRCRMNT_LVL3_ADD_T_3.csv
 
 select * from kulowner.FP_PRCRMNT_LVL3_ADD_T
 WHERE ORDER_DT  BETWEEN TO_DATE ('YEAR/08/01', 'yyyy/mm/dd')

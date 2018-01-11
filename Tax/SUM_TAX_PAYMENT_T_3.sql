@@ -5,7 +5,7 @@ set headsep off
 set numwidth 20    
 
 
-spool ./data/TAX_PAYMENT_T_SUM_3.xls
+spool ./data/TAX_PAYMENT_T_SUM_3.csv
 
 select SUM(ACCT_NET_AMT) from TAX_PAYMENT_T;
 

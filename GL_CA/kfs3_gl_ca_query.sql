@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/GL_CA_3.xls
+spool ./data/GL_CA_3.csv
 
 select /*+ parallel(a) parallel(b) */
 a.account_nbr || a.fin_object_cd || a.fin_sub_obj_cd as SUB_OBJ_CD_NOT_IN_2016,

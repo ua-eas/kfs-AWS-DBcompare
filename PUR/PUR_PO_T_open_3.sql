@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/3.xls
+spool ./data/3.csv
 
 select count(*) from PUR_PO_T where PO_STAT_CD = 'OPEN';
 
