@@ -4,7 +4,7 @@ set trimspool on
 set headsep off
 set numwidth 20
 
-spool ./data/FP_PRCRMNT_LVL3_ADD_T_SUM_3.xls
+spool ./data/FP_PRCRMNT_LVL3_ADD_T_SUM_3.csv
 
 select SUM(TAX_AMT), SUM(TAX_RATE), SUM(DISCOUNT_AMT), SUM(FREIGHT_AMT), SUM(DUTY_AMT) from FP_PRCRMNT_LVL3_ADD_T;
 

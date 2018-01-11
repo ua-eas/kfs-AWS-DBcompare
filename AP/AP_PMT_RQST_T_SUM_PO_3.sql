@@ -7,7 +7,7 @@ set numwidth 20
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/AP_PMT_RQST_T_SUM_PO_3.xls
+spool ./data/AP_PMT_RQST_T_SUM_PO_3.csv
 
 select SUM(PO_ID) from AP_PMT_RQST_T;
 

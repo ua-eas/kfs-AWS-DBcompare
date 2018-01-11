@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/FP_PRCRMNT_CARD_HLDR_DTL_T_7.xls
+spool ./data/FP_PRCRMNT_CARD_HLDR_DTL_T_7.csv
 
 select * from FP_PRCRMNT_CARD_HLDR_DTL_T;
 

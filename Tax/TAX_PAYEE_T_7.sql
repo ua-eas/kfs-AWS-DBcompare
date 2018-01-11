@@ -5,7 +5,7 @@ set headsep off
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-spool ./data/TAX_PAYEE_T_7.xls
+spool ./data/TAX_PAYEE_T_7.csv
 
 select count(1) from KULOWNER.TAX_PAYEE_T;
 select PAYEE_ID

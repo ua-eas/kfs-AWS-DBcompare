@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/AP_PMT_RQST_T_ROWS_3.xls
+spool ./data/AP_PMT_RQST_T_ROWS_3.csv
 
 select count(*) from AP_PMT_RQST_T;
 

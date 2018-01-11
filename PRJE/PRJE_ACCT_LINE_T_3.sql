@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/PRJE_ACCT_LINE_T_3.xls
+spool ./data/PRJE_ACCT_LINE_T_3.csv
 
 select * from PRJE_ACCT_LINE_T;
 

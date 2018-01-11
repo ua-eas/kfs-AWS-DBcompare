@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/PUR_VNDR_HDR_T_7.xls
+spool ./data/PUR_VNDR_HDR_T_7.csv
 
 select 
 VNDR_HDR_GNRTD_ID,

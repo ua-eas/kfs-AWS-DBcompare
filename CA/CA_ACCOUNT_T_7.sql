@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/CA_ACCOUNT_T_7.xls
+spool ./data/CA_ACCOUNT_T_7.csv
 
 select * from CA_ACCOUNT_T;
 
