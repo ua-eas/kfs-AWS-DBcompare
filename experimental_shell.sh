@@ -43,7 +43,7 @@ if [ "$FLOWDOWN" == "true" ];
 then
 	sqlplus $DB_USERNAME/$STG_DB_PASSWORD@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
 else 
-	sqlplus $DB_USERNAME/$NONPROD_PASSWORD@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+	sqlplus $DB_USERNAME/$DB_PASSWORD@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
 fi
 
 date
