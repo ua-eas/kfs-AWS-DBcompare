@@ -58,8 +58,8 @@ diff -s * > diff_results.csv || error=true
 date
 
 
-tar -cvf $ARCHIVE.tar.gz *
-aws s3 cp --sse AES256 $ARCHIVE.tar.gz s3://kfs-upgrade-db-validation/$ARCHIVE.tar.gz
+zip $ARCHIVE.zip *
+aws s3 cp --sse AES256 $ARCHIVE.zip s3://kfs-upgrade-db-validation/$ARCHIVE.zip
     
 #Fail the build if there was an error
 if [ $error ]
