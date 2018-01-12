@@ -5,7 +5,7 @@ DB_USERNAME="kulowner"
 
 # Put the ARCHIVE name for the TAR file
 ARCHIVE=$ARCHIVE
-# Table that the SQL is running against
+
 
 
 echo "KFS3_DB_HOST=$KFS3_DB_HOST" >> jenkins_params.properties
@@ -17,10 +17,12 @@ cd $DIRECTORY
 
 
 #KFS 3
-QUERY_FILE_3=${QUERY_FILE_3}_3.sql
+#QUERY_FILE_3=${QUERY_FILE_3}_3.sql
+QUERY_FILE_3=${QUERY_FILE_3}
 
 #KFS 7
-QUERY_FILE_7=${QUERY_FILE_7}_7.sql
+#QUERY_FILE_7=${QUERY_FILE_7}_7.sql
+QUERY_FILE_7=${QUERY_FILE_7}
 
 
 #KFS 3 GOLD
