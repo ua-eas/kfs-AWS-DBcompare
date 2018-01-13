@@ -14,6 +14,14 @@ echo "KFS7_DB_HOST=$KFS7_DB_HOST" >> jenkins_params.properties
 echo "KFS7_DB_SERVICE=$KFS7_DB_SERVICE" >> jenkins_params.properties
 echo "FLOWDOWN=$FLOWDOWN" >> jenkins_params.properties
 
+
+echo "KFS3_DB_HOST=$KFS3_DB_HOST"
+echo "KFS3_DB_SERVICE=$KFS3_DB_SERVICE" 
+echo "KFS7_DB_HOST=$KFS7_DB_HOST" 
+echo "KFS7_DB_SERVICE=$KFS7_DB_SERVICE" 
+echo "FLOWDOWN=$FLOWDOWN" 
+
+
 cd $DIRECTORY
 
 
