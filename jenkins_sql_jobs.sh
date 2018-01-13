@@ -25,11 +25,11 @@ QUERY_FILE_3=${QUERY_FILE_3}
 QUERY_FILE_7=${QUERY_FILE_7}
 
 
-#KFS 3 GOLD
+#KFS 3 
 KFS3_DB_HOST=$KFS3_DB_HOST
 KFS3_DB_SERVICE=$KFS3_DB_SERVICE
 
-# KFS 7 GOLD DB
+# KFS 7 
 KFS7_DB_HOST=$KFS7_DB_HOST
 KFS7_DB_SERVICE=$KFS7_DB_SERVICE
 
@@ -37,15 +37,15 @@ mkdir data
 
 
 date
-sqlplus $DB_USERNAME/$DB_PASSWORD@$KFS3_DB_HOST/$KFS3_DB_SERVICE @$QUERY_FILE_3 > sqlplus1.out
+sqlplus $DB_USERNAME/$DB_PASSWORD_NO_FLOWDOWN@$KFS3_DB_HOST/$KFS3_DB_SERVICE @$QUERY_FILE_3 > sqlplus1.out
 date
 
 # because we have TWO different types of DBs for the moment need a flowdown and non flowdown version
 if [ "$FLOWDOWN" == "true" ];
 then
-	sqlplus $DB_USERNAME/$STG_DB_PASSWORD@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+	sqlplus $DB_USERNAME/$DB_PASSWORD_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
 else 
-	sqlplus $DB_USERNAME/$DB_PASSWORD@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+	sqlplus $DB_USERNAME/$DB_PASSWORD_NO_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
 fi
 
 date
