@@ -13,3 +13,11 @@ select SUM(PO_ID) from AP_PMT_RQST_T;
 
 
 spool off
+
+
+spool ./data/AP_PMT_RQST_T_SUM_PO_7.csv
+
+select SUM(PO_ID) from AP_PMT_RQST_T@DBLINK;
+
+
+spool off
