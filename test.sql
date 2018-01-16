@@ -15,6 +15,6 @@ spool off
 
 spool ./data/7.csv
 
-select * from FP_PRCRMNT_CARD_HLDR_DTL_T;
+select * from FP_PRCRMNT_CARD_HLDR_DTL_T@KFS7GOLD;
 
 spool off
