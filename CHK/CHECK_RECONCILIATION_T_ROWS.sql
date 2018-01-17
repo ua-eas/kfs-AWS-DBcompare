@@ -7,7 +7,7 @@ set numwidth 20
 
 spool ./data/CHECK_RECONCILIATION_T_3.csv
 
-select count(*) CHECK_RECONCILIATION_T;
+select count(*) from CHECK_RECONCILIATION_T;
 
 spool off
 
@@ -16,6 +16,6 @@ spool off
 
 spool ./data/CHECK_RECONCILIATION_T_7.csv
 
-select count(*) CHECK_RECONCILIATION_T@DBLINK;
+select count(*) from CHECK_RECONCILIATION_T@DBLINK;
 
 spool off
