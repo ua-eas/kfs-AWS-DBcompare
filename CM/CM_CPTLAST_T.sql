@@ -14,6 +14,6 @@ spool off
 
 spool ./data/CM_CPTLAST_T_7.csv
 
-select * from CM_CPTLAST_T@DBLINK order by 1 ASC;;
+select * from CM_CPTLAST_T@DBLINK order by 1 ASC;
 
 spool off
