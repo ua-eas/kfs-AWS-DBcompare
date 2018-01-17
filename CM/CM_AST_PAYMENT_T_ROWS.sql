@@ -8,13 +8,13 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 spool ./data/CM_AST_PAYMENT_T_3.csv
 
-select * from CM_AST_PAYMENT_T;
+select count(*) from CM_AST_PAYMENT_T;
 
 spool off
 
 
 spool ./data/CM_AST_PAYMENT_T_7.csv
 
-select * from CM_AST_PAYMENT_T@DBLINK;
+select count(*) from CM_AST_PAYMENT_T@DBLINK;
 
 spool off
