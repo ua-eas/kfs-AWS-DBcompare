@@ -16,6 +16,8 @@ order by FDOC_NBR, OBJ_ID,VER_NBR,DEST_POSTAL  asc;
 
 spool off
 
+spool ./data/FP_PRCRMNT_LVL3_ADD_T_7.csv
+
 select * from kulowner.FP_PRCRMNT_LVL3_ADD_T@DBLINK
 WHERE ORDER_DT  BETWEEN TO_DATE ('YEAR/08/01', 'yyyy/mm/dd')
 AND TO_DATE ('YEAR/08/07', 'yyyy/mm/dd')
