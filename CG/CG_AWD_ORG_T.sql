@@ -17,12 +17,5 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_CG_AWD_ORG_T_3.csv
-SELECT COUNT(*) FROM CG_AWD_ORG_T;
-spool off
-
-spool ./data/ROW_COUNT_CG_AWD_ORG_T_7.csv
-SELECT COUNT(*) FROM CG_AWD_ORG_T@DBLINK;
-spool off
 
 
