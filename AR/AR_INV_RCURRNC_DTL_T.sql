@@ -17,12 +17,4 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_AR_INV_RCURRNC_DTL_T_3.csv
-SELECT COUNT(*) FROM AR_INV_RCURRNC_DTL_T;
-spool off
-
-spool ./data/ROW_COUNT_AR_INV_RCURRNC_DTL_T_7.csv
-SELECT COUNT(*) FROM AR_INV_RCURRNC_DTL_T@DBLINK
-spool off
-
 

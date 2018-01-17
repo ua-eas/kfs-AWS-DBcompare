@@ -17,12 +17,5 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_FP_CHECK_DTL_T_3.csv
-SELECT COUNT(*) FROM FP_CHECK_DTL_T;
-spool off
-
-spool ./data/ROW_COUNT_FP_CHECK_DTL_T_7.csv
-SELECT COUNT(*) FROM FP_CHECK_DTL_T@DBLINK;
-spool off
 
 

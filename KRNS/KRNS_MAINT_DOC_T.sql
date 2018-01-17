@@ -17,12 +17,5 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_KRNS_MAINT_DOC_T_3.csv
-SELECT COUNT(*) FROM KRNS_MAINT_DOC_T;
-spool off
-
-spool ./data/ROW_COUNT_KRNS_MAINT_DOC_T_7.csv
-SELECT COUNT(*) FROM KRNS_MAINT_DOC_T@DBLINK;
-spool off
 
 

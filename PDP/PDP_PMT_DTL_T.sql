@@ -17,10 +17,4 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_PDP_PMT_DTL_T_3.csv
-SELECT COUNT(*) FROM PDP_PMT_DTL_T;
-spool off
 
-spool ./data/ROW_COUNT_PDP_PMT_DTL_T_7.csv
-SELECT COUNT(*) FROM PDP_PMT_DTL_T@DBLINK;
-spool off

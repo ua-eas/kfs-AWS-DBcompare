@@ -17,12 +17,5 @@ spool off
 
 
 
-spool ./data/ROW_COUNT_LD_A21_REPORT_T_3.csv
-SELECT COUNT(*) FROM LD_A21_REPORT_T;
-spool off
-
-spool ./data/ROW_COUNT_LD_A21_REPORT_T_7.csv
-SELECT COUNT(*) FROM LD_A21_REPORT_T@DBLINK;
-spool off
 
 
