@@ -7,7 +7,7 @@ set numwidth 20
 
 spool ./data/gl_balance_t_3.csv
 
-select sum(ACCOUNT_NBR) from  GL_BALANCE_T
+select sum(ACCOUNT_NBR) from  GL_BALANCE_T;
 
 spool off
 
