@@ -2,6 +2,7 @@ set colsep ','
 set pagesize 0   
 set trimspool on 
 set headsep off     
+set numwidth 20
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
