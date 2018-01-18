@@ -6,7 +6,6 @@ set numwidth 20
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-
 spool ./data/FP_PRCRMNT_CARD_TRN_T_3.csv
 
 select
