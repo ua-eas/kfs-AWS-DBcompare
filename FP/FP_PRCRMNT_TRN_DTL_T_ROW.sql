@@ -6,13 +6,13 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/FP_PRCRMNT_TRN_DTL_T.csv
+spool ./data/FP_PRCRMNT_TRN_DTL_T_3.csv
 
 select count(*) from kulowner.FP_PRCRMNT_TRN_DTL_T;
 
 spool off
 
-spool ./data/FP_PRCRMNT_TRN_DTL_T.csv
+spool ./data/FP_PRCRMNT_TRN_DTL_T_7.csv
 
 select count(*) from kulowner.FP_PRCRMNT_TRN_DTL_T@DBLINK;
 
