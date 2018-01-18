@@ -29,6 +29,7 @@ SUM(ADJUST_AMT),
 SUM(TOTAL_TAX_AMT)
 from kulowner.FP_PRCRMNT_CARD_TRN_T;
 
+
 spool off
 
 spool ./data/FP_PRCRMNT_CARD_TRN_T_7.csv
