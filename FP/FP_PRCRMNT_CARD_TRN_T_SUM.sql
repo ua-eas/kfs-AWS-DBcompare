@@ -6,7 +6,6 @@ set numwidth 20
 
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
-
 spool ./data/FP_PRCRMNT_CARD_TRN_T_3.csv
 
 select
@@ -28,7 +27,8 @@ SUM(PRE_PAID_AMT),
 SUM(ADJUSTMENT_AMT),
 SUM(ADJUST_AMT),
 SUM(TOTAL_TAX_AMT)
-from kulowner.FP_PRCRMNT_CARD_TRN_T;
+from KULOWNER.FP_PRCRMNT_CARD_TRN_T;
+
 
 spool off
 
