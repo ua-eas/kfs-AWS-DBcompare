@@ -8,12 +8,12 @@ SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 spool ./data/CM_CPTLAST_T_3.csv
 
-select * from CM_CPTLAST_T order by 1 ASC;
+select count(*) from  kulowner.CM_CPTLAST_T;
 
 spool off
 
 spool ./data/CM_CPTLAST_T_7.csv
 
-select * from CM_CPTLAST_T@DBLINK order by 1 ASC;
+select count(*) from  CM_CPTLAST_T@DBLINK;
 
 spool off
