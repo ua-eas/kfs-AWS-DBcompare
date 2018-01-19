@@ -20,7 +20,7 @@ DISB_NBR  ASC;
 
 spool off
 
-
+spool ./data/TAX_PAYMENT_T_7.csv
 
 
 select * from kulowner.TAX_PAYMENT_T@DBLINK
