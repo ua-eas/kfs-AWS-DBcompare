@@ -18,8 +18,9 @@ ACCOUNT_NBR,
 PAYEE_ID,
 DISB_NBR  ASC;
 
-
 spool off
+
+spool ./data/TAX_PAYMENT_T_FULL_YEAR_7.csv
 
 select * from kulowner.TAX_PAYMENT_T@DBLINK
  WHERE DISB_DT  BETWEEN TO_DATE ('2017/01/01', 'yyyy/mm/dd')
