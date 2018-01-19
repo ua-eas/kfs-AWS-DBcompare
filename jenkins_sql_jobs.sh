@@ -51,7 +51,13 @@ date
 sqlplus $DB_USERNAME/$DB_PASSWORD_NON_FLOWDOWN@$KFS3_DB_HOST/$KFS3_DB_SERVICE @$QUERY_FILE_3 > sqlplus1.out
 date
 
-
+# because we have TWO different types of DBs for the moment need a flowdown and non flowdown version
+if [ -z $FLOWDOWN  ];
+then
+	sqlplus $DB_USERNAME/$DB_PASSWORD_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+else 
+	sqlplus $DB_USERNAME/$DB_PASSWORD_NON_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+fi
 
 date
 
