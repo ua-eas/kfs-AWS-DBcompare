@@ -54,14 +54,14 @@ date
 # because we have TWO different types of DBs for the moment need a flowdown and non flowdown version
 # NOT USED at this time because we are using DB LINKS.  All Jenkins jobs have a FLOWDOWN boolean that can be used
 # I am leaving it in just in case I need to run against a flowed down DB.
-if [ -z $FLOWDOWN  ];
-then
-	sqlplus $DB_USERNAME/$DB_PASSWORD_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
-else 
-	sqlplus $DB_USERNAME/$DB_PASSWORD_NON_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
-fi
+#if [ -z $FLOWDOWN  ];
+#then
+#	sqlplus $DB_USERNAME/$DB_PASSWORD_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+#else 
+#	sqlplus $DB_USERNAME/$DB_PASSWORD_NON_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
+#fi
 
-date
+
 
 cd data
 ls -lhatr 
