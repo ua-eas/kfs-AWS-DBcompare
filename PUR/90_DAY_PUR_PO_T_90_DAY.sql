@@ -13,3 +13,9 @@ select * from PUR_PO_T where PO_CRTE_DT >= sysdate-90 order by 1 ASC;
 
 spool off
 
+spool ./data/PUR_PO_T_90_DAY_7.csv
+
+select * from PUR_PO_T where PO_CRTE_DT >= sysdate-90 order by 1 ASC;
+
+
+spool off
