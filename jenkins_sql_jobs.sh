@@ -52,7 +52,7 @@ sqlplus $DB_USERNAME/$DB_PASSWORD_NON_FLOWDOWN@$KFS3_DB_HOST/$KFS3_DB_SERVICE @$
 date
 
 # because we have TWO different types of DBs for the moment need a flowdown and non flowdown version
-if [ "$FLOWDOWN" == "true" ];
+if [ -z $FLOWDOWN  ];
 then
 	sqlplus $DB_USERNAME/$DB_PASSWORD_FLOWDOWN@$KFS7_DB_HOST/$KFS7_DB_SERVICE @$QUERY_FILE_7 > sqlplus2.out
 else 
