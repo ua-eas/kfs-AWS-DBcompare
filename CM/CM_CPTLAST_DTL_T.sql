@@ -43,7 +43,7 @@ spool off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool ./data/CM_CPTLAST_DTL_T_3.csv
+spool ./data/CM_CPTLAST_DTL_T_7.csv
 
 select 
 RPAD(FDOC_NBR, '5'),
