@@ -6,7 +6,7 @@ set headsep off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool /home/mhirst/DB_Validation/query_results/3.csv
+spool ./data/CM_CPTLAST_DTL_T_3.csv
 
 select 
 RPAD(FDOC_NBR, '5'),
@@ -43,7 +43,8 @@ spool off
 SELECT CURRENT_TIMESTAMP FROM DUAL;
 
 
-spool /home/mhirst/DB_Validation/query_results/7.csv
+spool ./data/CM_CPTLAST_DTL_T_3.csv
+
 select 
 RPAD(FDOC_NBR, '5'),
 RPAD(OBJ_ID, '5'),
