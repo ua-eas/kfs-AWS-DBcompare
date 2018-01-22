@@ -75,6 +75,7 @@ date
 
 zip $ARCHIVE.zip *
 aws s3 cp --sse AES256 $ARCHIVE.zip s3://kfs-upgrade-db-validation/$ARCHIVE.zip
+sleep 5
     
 #Fail the build if there was an error
 if [ $error ]
